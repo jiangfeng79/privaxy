@@ -35,7 +35,7 @@ pub struct PrivaxyServer {
 }
 
 pub async fn start_privaxy() -> PrivaxyServer {
-    let ip = [127, 0, 0, 1];
+    let ip = [192, 168, 0, 2];
 
     // We use reqwest instead of hyper's client to perform most of the proxying as it's more convenient
     // to handle compression as well as offers a more convenient interface.
